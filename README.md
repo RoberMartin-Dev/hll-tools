@@ -1,3 +1,4 @@
+:green_square: :scroll: ////////// Español ////////// :scroll: :green_square:  
 # HLL Tools
 
 Una sencilla aplicación web multi-herramienta para jugadores de Hell Let Loose, que incluye:
@@ -43,8 +44,7 @@ MIT
 
 RoberMartin-Dev.
 
-
-
+:green_square: :scroll: ////////// English ////////// :scroll: :green_square:  
 # HLL Tools
 
 A simple multi-tool web app for Hell Let Loose players, featuring:
