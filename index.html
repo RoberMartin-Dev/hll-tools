@@ -1,0 +1,72 @@
+<!-- [250H] Farkas -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HLL Tools</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="background"></div>
+
+        <div class="container" id="home-section">
+            <h1>HELL LET LOOSE TOOLS</h1>
+            <a href="#arty" class="btn btn-primary">Artillery calculator</a>
+            <a href="#log" class="btn btn-secondary">Log processor</a>
+            <br />
+            <div>
+                <p>@ <a class="copy" href="">[250H] Farkas</a></p>
+            </div>
+        </div>
+
+        <div class="container" id="log-section" style="display:none;">
+            <h1>HLL Log Processor</h1>
+            <a href="#" class="menu">Main menu</a><br /><br />
+            <textarea id="logInput" placeholder="Paste your game logs here. Example: [17:49 min (1741402288)] KILL: Player1(Allies/SteamID) -> Player2(Axis/SteamID) with WEAPON"></textarea>
+            <div class="button-container">
+                <button id="generatePdf">Generate PDF</button>
+                <button id="generateTable">Show Table</button>
+            </div>
+            <div id="tableContainer"></div>
+            <div id="status"></div>
+        </div>
+
+        <div class="container" id="arty-section" style="display:none;">
+            <h1>HLL Artillery Calculator</h1>
+            <a href="#" class="menu">Main menu</a>
+            <div class="controls">
+                <input type="number" id="distance" placeholder="Distance (100-1600m)" min="100" max="1600" oninput="validateInput(this)" pattern="\d*" />
+                <select id="artilleryType">
+                    <option value="US/Ger">US/Ger Artillery</option>
+                    <option value="URSS">URSS Artillery</option>
+                    <option value="UK">UK Artillery</option>
+                </select>
+                <button onclick="showResult()">Calculate</button>
+                <button onclick="saveResult()">Anotate</button>
+            </div>
+            <div class="result-display" id="resultDisplay"></div>
+            <h3>Saved results:</h3>
+            <div class="table-container">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Distance</th>
+                            <th>Result</th>
+                            <th>Faction</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.26/jspdf.plugin.autotable.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
