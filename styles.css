@@ -83,7 +83,8 @@ body {
     background-color: transparent;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     z-index: 2;
     animation: fadeIn 0.3s ease-out;
     display: flex;
