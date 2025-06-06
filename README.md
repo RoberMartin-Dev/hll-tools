@@ -10,6 +10,10 @@ Una sencilla aplicación web multi-herramienta para jugadores de Hell Let Loose,
 - **Diseño Responsivo**: Funciona perfectamente en escritorio, tabletas y dispositivos móviles.
 - **Almacenamiento Local**: Guarda resultados de artillería localmente para referencia posterior.
 
+> [!NOTE]
+> La calculadora de artillería no pide confirmación para borrar registros por cuestiones de velocidad (importante en competición).
+> Log processor está pensado para sustituir los RCON vanilla o que requieren VPS, permitiendo obtener estadísticas básicas gratis.
+
 ## Uso
 
 1. Abre la aplicación en un navegador moderno.
@@ -55,6 +59,10 @@ A simple multi-tool web app for Hell Let Loose players, featuring:
 - **Single Page App**: Navigate between tools with URL hash routing.
 - **Responsive Design**: Works smoothly on desktops, tablets, and mobile devices.
 - **Local Storage**: Save artillery results locally for later reference.
+
+> [!NOTE]
+> The artillery calculator skips confirmation prompts when deleting entries to maintain speed, which is crucial in competitive play.  
+> The log processor is intended as an alternative to vanilla RCON tools or those requiring a VPS, enabling users to generate basic statistics at no cost.
 
 ## Usage
 
