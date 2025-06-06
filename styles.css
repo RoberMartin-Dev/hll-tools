@@ -357,11 +357,18 @@ button.delete-btn:hover {
 
 @media (max-width: 600px) {
     .controls {
-        grid-template-columns: 1fr !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1.5rem 0;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .controls > * {
-        width: 100%;
+        flex: 1 1 45%;
+        min-width: 120px;
     }
 
     .table-container {
