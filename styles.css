@@ -105,6 +105,8 @@ body {
     pointer-events: none;
     border-radius: 15px;
     filter: blur(2px);
+    opacity: 0.95;
+    filter: brightness(0.98);
 }
 
 .container h1,
