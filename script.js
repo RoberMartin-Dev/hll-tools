@@ -81,13 +81,14 @@ function processLogs() {
 
 function renderTable(data) {
     const container = document.getElementById('tableContainer');
-    container.innerHTML = '';
+    container.innerHTML = ''; // Limpiamos el contenedor
 
     if (!data.length) {
         container.innerHTML = '<p class="no-data">No valid kill data found</p>';
         return;
     }
 
+    // Creamos la tabla
     const table = document.createElement('table');
     const headers = ['Jugador', 'Kills', 'Deaths', 'Ratio'];
 
@@ -115,7 +116,13 @@ function renderTable(data) {
     });
     table.appendChild(tbody);
 
-    container.appendChild(table);
+    // ✅ Envolver la tabla en un .table-container
+    const wrapper = document.createElement('div');
+    wrapper.className = 'table-container';
+    wrapper.appendChild(table);
+
+    // Insertamos el wrapper en lugar de la tabla directamente
+    container.appendChild(wrapper);
 }
 
 function sortTable(column) {
