@@ -100,8 +100,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:rgb(34,34,34);stop-opacity:0.9" /><stop offset="100%" style="stop-color:rgb(34,34,34);stop-opacity:0.1" /></linearGradient></defs><rect width="100%" height="100%" fill="url(#grad1)" /></svg>');
-    z-index: -1;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:rgb(34,34,34);stop-opacity:0.9' /%3E%3Cstop offset='100%25' style='stop-color:rgb(34,34,34);stop-opacity:0.1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad1)' /%3E%3C/svg%3E");    z-index: -1;
     pointer-events: none;
     border-radius: 15px;
     filter: blur(2px);
